@@ -1,2 +1,10 @@
-#! /bin/sh
+#!/bin/sh
+
+build_path=$1
+cache_path=$2
+
+cd $build_path
+
+./configure && make && make install
+
 exit 0
